@@ -1,0 +1,599 @@
+:root{
+    --backgound:#e43a47;
+    --gray:#efefef;
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+p{font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+
+.banner{
+    width: 100%;
+}
+
+container{
+
+    width: 1140px;
+    margin: auto;
+}
+.sectionhead{
+  width: 300;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+/*
+.sectionhead::after{
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--backgound);
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(75% - 7px);
+  transform: rotate(45deg) translate(50%,50%);
+  border: 3px solid #fff; 
+}
+*/
+
+/* section{
+  padding: 100px 0;
+  position: relative;}
+*/
+
+/*  normal style apply end here*/
+
+/*home section begins here*/
+header{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 2;
+  
+}
+
+
+  header .container{
+     display: flex;
+     justify-content: space-between;
+  }
+   
+  header .container .logo{
+    padding: 15px 0;
+    height: 50px;
+  }
+
+  header .container .logo img{
+    height: 100%;
+    margin-left: 20px;
+
+  }
+
+  header nav ul{
+    list-style-type: none;
+
+  }
+  header nav ul li{
+    display: inline-block;
+
+  }
+
+  header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+  }
+      
+  header nav ul li a:hover{
+     background-color:var(--backgound);
+  }
+
+  .banner{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(village.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  .banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 200;
+   
+  }
+
+  .banner h1 span{
+    background-color: var(--backgound);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    ;
+
+  }
+
+  .banner p {
+    color: #FFD700;
+    margin-top: 20px;
+    width: 50%;
+    font-weight: 100;
+    font-size: 20px;
+    text-shadow: 0 0 2px #000;
+  }
+
+
+  .banner button{
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 0 1rem var(--text-color);
+    background-color: var(--backgound);
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  } 
+
+  .banner button:hover{
+    background-color: var(--bg-color);
+    color:var(--text-color);}
+
+    #home-text{
+      margin-left: 30px;
+      width: 100%;
+      
+    } 
+/*home section ends here*/
+
+/*about section begins here*/
+#aboutsection .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+ 
+  position: relative;
+height: 245px;
+}
+#aboutsection .cards >div {
+  width: 350px;
+  background-color: var(--gray);
+  padding: 35px;
+  color: #444;
+  text-align: center;
+  border-radius: 15px;
+  height: 215px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.4s;
+}
+#aboutsection .cards >div:hover{
+  width: 400px;
+  margin-top: -20px;
+  border-color:var(--backgound) ;
+  padding: 55px;
+  height: auto;
+
+
+}
+
+#aboutsection .cards >div .heading{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#aboutsection .cards >div .heading p{
+  font-size: 14px;
+  margin-top: 15;
+
+}
+
+#aboutsection .cards >div button{
+  border: 1px solid var(--backgound);
+  outline: none;
+  padding: 7px 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+#aboutsection .cards >div:hover button{
+  background-color: var(--backgound);
+  color: #fff;
+} 
+
+/*about section ends here   */
+
+
+
+/*  join us section start from here*/
+.join{background-color:var(--bg-color);
+  color: #fff;
+  padding: 100px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.join p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.joinhead{
+  font-size: 40px;
+  font-weight: 100;
+
+}
+
+.join .joinhead span{
+
+   font-weight: 800;
+}
+.join button{
+  padding: 7px 15px;
+  margin-top: 50px;
+  border: 0;
+  outline: none;
+  font-weight: 600;
+
+}
+.join button.joinnow{
+  margin-right: 10px;
+  background-color: #fff;
+  color: var(--backgound);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.join button.joinnow:hover{
+  background-color: var(--backgound);
+  color: #fff;
+}
+.join button.adoptchild{
+  margin-right: 10px;
+  background-color: #fff;
+  color: var(--backgound);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.join button.adoptchild:hover{
+  background-color: var(--backgound);
+  color: #fff;
+}
+/*  join us section enrd here*/
+
+<!--  gallery start from here-->
+
+.gallery {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.sectionhead {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallerycontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+
+.gallery .gallerycontainer .item{
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+
+}
+.gallery .gallerycontainer img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery .gallerycontainer .title{
+  position: absolute;
+  background-color: var(--gray);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;  
+
+}
+
+.gallery .gallerycontainer .item:hover .title{
+  opacity: 1;
+}
+.gallery .gallerycontainer .item:hover img{
+  transform: scale(1.2);
+}  
+
+/*gallery section end from here*/
+
+
+
+
+
+
+/*  footer section start from here*/
+
+footer{
+  background-color: #181818;
+  color: #7f7f7f;
+  padding: 50px 0;
+  font-size: 14px;
+  height: 50vh;
+}
+
+footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  position:absolute;
+  
+}
+footer .title{
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  padding:0 0 5px 0; 
+}
+
+footer p{
+  margin-bottom: 10px;
+
+}
+
+footer .linkscontainer ul{
+  list-style-type: none;
+}
+
+.linkscontainer{
+  display: flex;
+  flex-direction: column;
+}
+footer .linkscontainer ul li a{
+  display: block;
+text-decoration: none;
+  margin-bottom: 10px;
+  color: #7f7f7f;
+}
+
+footer .lettercontainer img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 11px;
+  margin-left: 100px;
+
+}
+footer .lettercontainer input{
+  background-color: transparent;
+  border: 1px solid #7f7f7f;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 30px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+ footer .lead{
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/*  footer us section end here*/
+
+
+/* media query start here*/
+@media screen and(max-width: 1200px){
+  .container{
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media screen and(max-width: 1080px){
+  .banner h1{
+    margin-top: 200px;
+  }
+
+  #aboutsection .cards{
+    justify-content: space-around;
+    height: auto;
+  }
+  #aboutsection  .cards >div{
+    width: 100%;
+    margin:10px 0;
+  }
+}
+
+@media screen and(maxi-width:1024px){.banner{
+  background-position-x: 45%;
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+}
+
+/*toggle menu  here*/
+@media screen and(maxi-width :768px){
+  header nav {
+    position: relative;
+    border: 2px solid #fff;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+  }
+
+  header nav ::after{
+    top: 17px;
+  }
+
+  header nav::before{
+    top: 7px;
+
+  }
+
+  header nav ::after ,
+  header nav::before{
+    content: "";
+    width: 17;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 5px;
+  }
+  header nav ul{
+    position: absolute;
+    right: 400px;
+    top: 53px;
+    transition: 0.5s;
+
+  }
+
+  header nav :hover ul{
+    right: 0;
+  }
+
+  header nav ul li{
+    display: block;
+  }
+
+  header nav ul li a{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .banner{
+    background-position-x: 65%;
+     
+  }
+  .banner p{font-size: 14px;
+  }
+  .banner p .banner h1{
+    width: 70%;
+  }
+  #aboutsection .cards > div:hover{
+    width: 350px;
+
+  }
+
+  .gallery .gallerycontainer{
+    column-count: 2;
+  }
+}
+
+@media screen and(maxi-width:425px){
+  .banner h1{
+    margin-top: 150px;
+    font-size: 2rem;
+    line-height: 3rem;
+
+  }
+
+  .banner button{
+    margin-bottom: 10px;
+
+  }
+
+#aboutsection p{
+  text-align: justify;
+
+}
+
+#aboutsection .cards > div :hover{
+  width: 400px;
+  margin-top: 10px;
+  padding: 35px;
+
+}
+
+.gallery .gallerycontainer{
+  column-count: 1;
+}
+
+footer .container{
+  grid-template-columns: 1fr;
+
+}
+
+}
+
+@media screen and(maxi-width:320px){
+  .banner h1{
+    margin-top: 100px;
+  }
+  footer .lead {
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+}
